@@ -1,0 +1,90 @@
+
+.container {
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 40px 5px 30px 1fr  50px;
+    gap: 10p5
+    padding: 10px;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+.header{
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start: 1;
+    grid-column-end:8;
+    background:#ff6c97;
+}
+
+.header p {
+    margin-left:25px;
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+}
+
+
+
+.countrySelectorContainer form {
+    margin-left:10%;
+    margin-top:35%;
+}
+
+.titleHeadliner {
+    grid-row-start:2;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end:8;
+
+}
+
+
+
+.resultHeadliner {
+    grid-row-start:4;
+    grid-row-end:4;
+    grid-column-start: 2;
+    grid-column-end:6;
+    margin-top:30px;
+    border-style:solid;
+    border-color:#ff6c97;
+    padding-left:50px;
+    padding-top:10%;
+    height:300px;
+}
+.resultHeadliner p {
+    color:grey;
+    font-size:30px;
+    margin-top:25px;
+
+}
+.resultHeadliner h1 {
+    margin-bottom:15px;
+    color:grey;
+
+}
+
+
+.footer{
+    grid-row-start:5;
+    grid-row-end:5;
+    grid-column-start: 1;
+    grid-column-end:8;
+    background:#9fdff8;
+}
+
+
+
+.footer p {
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    color:grey;
+    margin-right:15px;
+    margin-top:15px;
+}

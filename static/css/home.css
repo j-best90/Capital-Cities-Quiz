@@ -1,0 +1,66 @@
+
+
+.header{
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start: 1;
+    grid-column-end:8;
+    background:#ff6c97;
+}
+
+.header p {
+    margin-left:25px;
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+}
+
+.countrySelectorContainer {
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start: 2;
+    grid-column-end:6;
+    border-style:solid;
+    border-color:#ff6c97;
+    margin: auto;
+    width:50%;
+    padding:10px;
+    height:500px;
+}
+
+.countrySelectorContainer form {
+    margin-left:10%;
+    margin-top:35%;
+}
+
+.countrySelectorContainer form label {
+    font-size:40px;
+    width:100%;
+    color:grey;
+}
+
+.countrySelectorContainer form input {
+    height:20px;
+    width:300px
+}
+
+.footer{
+    grid-row-start:5;
+    grid-row-end:5;
+    grid-column-start: 1;
+    grid-column-end:8;
+    background:#9fdff8;
+}
+
+.formId {
+    display:inline;
+}
+
+.footer p {
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    color:grey;
+    margin-right:15px;
+    margin-top:15px;
+}

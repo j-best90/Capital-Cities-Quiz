@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Country Picker! {% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'css/quiz/quizResults.css' %}">
+{% endblock stylesheets %}
+
+
+{% block scriptsheader %}
+<script type="text/javascript" src="{% static 'js/quizResults-header.js' %}"></script>
+
+{% endblock scriptsheader %}
+
+
+{% block content %}
+<div class="titleHeadliner" id="titleHeadliner">
+    <h1>Quiz Results</h1>
+</div>
+{% if result == True %}
+<div class="resultHeadliner" id="resultHeadliner">
+    <h1>Congrats!</h1>
+    <p>You guessed correctly! The capital of {{ randomCountry }} is {{ capitanAnswer }}.</p>
+</div>
+{% else %}
+<div class="resultHeadliner" id="resultHeadliner">
+    <h1>Unlucky!</h1>
+    <p>Better luck next time. Unfortunately {{ capitanAnswer }} is not the capital of {{ randomCountry }}.</p>
+    <p>The capital of {{ randomCountry }} is {{ correctCapital }}.</p>
+</div>
+{% endif %}
+
+<script type="text/javascript" src="{% static 'js/quizResults.js' %}"></script>
+
+
+{% endblock content %}
