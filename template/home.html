@@ -18,7 +18,7 @@
 <div class="countrySelectorContainer" id="countrySelectorContainer">
     <form method="POST" id="formId"autocomplete="off">{% csrf_token %}
         <label for="capitalAnswer"><p>What is the Capital of {{ randomCountry }}?</p></label>
-        <input type="text" id="capitalAnswer" name="capitalAnswer">
+        <input type="text" id="capitalAnswer" name="capitalAnswer" required>
         <input type="text" id="countryQuestion" name="countryQuestion" value="{{ randomCountry }}" hidden>
         <button class="capitalAnswerSubmit" type="submit" id="capitalAnswerSubmit">Submit</button>
     </form>
